@@ -1,0 +1,7 @@
+- pipeline.id: product
+  path.config: "/usr/share/logstash/pipeline/product.conf"
+- pipeline.id: category
+  path.config: "/usr/share/logstash/pipeline/category.conf"
+- pipeline.id: product_category
+  path.config: "/usr/share/logstash/pipeline/product_category.conf"
+

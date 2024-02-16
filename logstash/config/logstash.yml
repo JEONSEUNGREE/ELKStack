@@ -1,0 +1,4 @@
+http.host: "0.0.0.0"
+# 모니터링 노드
+xpack.monitoring.elasticsearch.hosts: ["http://elasticsearch1:9200", "http://elasticsearch2:9200", "http://elasticsearch3:9200"]
+

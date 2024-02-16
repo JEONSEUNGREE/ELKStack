@@ -1,0 +1,31 @@
+{
+  "index_patterns": ["category-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "category_id": {
+          "type": "long"
+        },
+        "category_name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "parent_id": {
+          "type": "long"
+        }
+      }
+    }
+  },
+  "priority": 1,
+  "version": 1
+}
+

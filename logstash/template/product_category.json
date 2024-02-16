@@ -1,0 +1,25 @@
+{
+  "index_patterns": ["product_category-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    },
+    "mappings": {
+      "properties": {
+        "product_category_id": {
+          "type": "long"
+        },
+        "category_id": {
+          "type": "long"
+        },
+        "product_id": {
+          "type": "long"
+        }
+      }
+    }
+  },
+  "priority": 1,
+  "version": 1
+}
+
