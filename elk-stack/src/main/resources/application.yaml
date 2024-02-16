@@ -1,0 +1,21 @@
+server:
+  port: 7000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:4556/search?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update # 애플리케이션을 시작할 때 Hibernate가 데이터베이스 스키마를 자동으로 업데이트하도록 설정합니다.
+
+logging:
+  level:
+#    root: INFO # 전체 로깅 레벨을 INFO로 설정합니다.
+    org:
+      hibernate:
+        SQL: DEBUG

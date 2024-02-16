@@ -1,0 +1,3 @@
+rootProject.name = 'elk-stack'
+include 'elk-data'
+

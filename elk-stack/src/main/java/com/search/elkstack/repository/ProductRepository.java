@@ -1,4 +1,7 @@
 package com.search.elkstack.repository;
 
-public class ProductRepository {
+import com.search.elkstack.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }

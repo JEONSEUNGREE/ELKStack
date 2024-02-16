@@ -1,2 +1,12 @@
-package com.search.elkstack.repository;public class CategoryRepository {
+package com.search.elkstack.repository;
+
+import com.search.elkstack.entity.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface CategoryRepository extends JpaRepository<Category, Long> {
+
+    Category findByCategoryName(String cateNm);
+
 }
